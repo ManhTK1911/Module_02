@@ -1,4 +1,4 @@
-package Week_01.Inheritance.Shape;
+package Week_01.Interface_AbstractClass.Resizeable;
 
 public class Shape {
     private  String color = "green";

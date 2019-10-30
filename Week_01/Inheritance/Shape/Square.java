@@ -1,4 +1,4 @@
-package Inheritance.Shape;
+package Week_01.Inheritance.Shape;
 
 public class Square extends Rectangle {
     public Square() {

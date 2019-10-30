@@ -1,5 +1,7 @@
 package Inheritance.Shape;
 
+import Week_01.Inheritance.Shape.Triangle;
+
 import java.util.Scanner;
 
 public class testTriangle {

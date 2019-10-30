@@ -1,6 +1,6 @@
-package Inheritance.Shape;
+package Week_01.Inheritance.Shape;
 
-public class Rectangle extends Inheritance.Shape.Shape {
+public class Rectangle extends Week_01.Inheritance.Shape.Shape {
     private double width = 1.0;
     private double height = 1.0;
 

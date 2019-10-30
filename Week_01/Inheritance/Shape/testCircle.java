@@ -1,4 +1,4 @@
-package Inheritance.Shape;
+package Week_01.Inheritance.Shape;
 
 import javafx.scene.shape.Circle;
 

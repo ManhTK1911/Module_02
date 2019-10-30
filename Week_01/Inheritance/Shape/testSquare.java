@@ -1,4 +1,4 @@
-package Inheritance.Shape;
+package Week_01.Inheritance.Shape;
 
 public class testSquare {
     public static void main(String[] args) {
