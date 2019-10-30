@@ -1,4 +1,4 @@
-package Array_Method;
+package Week_01.Array_Method;
 
 import java.util.Scanner;
 
