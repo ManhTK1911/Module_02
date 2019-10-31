@@ -2,7 +2,7 @@ package Week_02.DataStructures_AlgorithmBasic.LinkedList;
 
 public class TestMyLinkedList {
     public static void main(String[] args) {
-        System.out.println("/=/=/=/= TESTING /=/=/=/=");
+        System.out.println("/=/=/=/= TESTING!!! /=/=/=/=");
         MyLinkedList ll = new MyLinkedList(10);
         ll.addFirst(11);
         ll.addFirst(12);
