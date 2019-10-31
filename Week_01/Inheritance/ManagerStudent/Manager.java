@@ -1,4 +1,4 @@
-package ManagerStudent;
+package Week_01.Inheritance.ManagerStudent;
 
 public class Manager {
     int id;

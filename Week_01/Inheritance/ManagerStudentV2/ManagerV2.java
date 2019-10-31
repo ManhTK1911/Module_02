@@ -1,4 +1,4 @@
-package ManagerStudentV2;
+package Week_01.Inheritance.ManagerStudentV2;
 
 public class ManagerV2 {
     int id;
@@ -53,30 +53,40 @@ public class ManagerV2 {
         student.setMark(newMark);
     }
 
-    public void addStudent(StudentV2 student, StudentV2[] studentList) {
-        studentList[index] = student;
-        index++;
-    }
 
-    public void deleteStudent(int id, StudentV2[] studentList) {
-        for (int i = id; i < studentList.length; i++) {
-            studentList[i] = studentList[i + 1];
+    public double getAvgMark() {
+        double avg = 0;
+        for (StudentV2 s : MainV2.studentsList) {
+            avg += s.getMark();
         }
+        return avg /= MainV2.studentsList.length;
     }
-//    int index = 0;
-//        for (int i = 0; i < size; i++) {
-//        if (input[i] != dValue) {
-//            arr[index] = input[i];
-//            index++;
-//        }
-//    }
 
-    public double getAvgMark(StudentV2[] studentList) {
-        double sumMark = 0;
-        for (int i = 0; i < studentList.length; i++) {
-            sumMark += studentList[i].getMark();
+
+    public void deleteStudent(int id) {
+        int index = 0;
+        for (int i = 0; i < MainV2.studentsList.length; i++) {
+            if (MainV2.studentsList[i].getId() == id) {
+                index = i;
+                break;
+            }
         }
-        return sumMark / studentList.length;
+        StudentV2[] newList = new StudentV2[MainV2.studentsList.length - 1];
+        for (int i = 0; i < index; i++) {
+            newList[i] = MainV2.studentsList[i];
+        }
+        for (int i = index; i < MainV2.studentsList.length - 1; i++) {
+            newList[i] = MainV2.studentsList[i + 1];
+        }
+        MainV2.studentsList = newList;
     }
 
+    public void addStudent(StudentV2 std) {
+        StudentV2[] newList = new StudentV2[MainV2.studentsList.length + 1];
+        for (int i = 0; i < MainV2.studentsList.length; i++) {
+            newList[i] = MainV2.studentsList[i];
+        }
+        newList[newList.length - 1] = std;
+        MainV2.studentsList = newList;
+    }
 }

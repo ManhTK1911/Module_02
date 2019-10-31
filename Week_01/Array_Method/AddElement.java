@@ -17,7 +17,7 @@ public class AddElement {
         index = scanner.nextInt();
 
         if (index < 0 || index > (arr.length - 1))
-            System.out.println("Cannot insert");
+            System.out.println("Cannot insert!!!");
         else {
             System.out.print("Old array is: ");
             for (int i = 0; i < arr.length; i++) {

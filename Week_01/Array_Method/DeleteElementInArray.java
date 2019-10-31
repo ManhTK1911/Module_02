@@ -1,3 +1,5 @@
+package Week_01.Array_Method;
+
 import java.util.Scanner;
 
 public class DeleteElementInArray {
